@@ -5,6 +5,21 @@
         <title>Word Frequency</title>
     </head>
     <body>
-        <h1>Word Frequency</h1>        
+        <h1>Word Frequency</h1>
+        <form action='/results' method='post'>
+            <ul>
+                <li>
+                    <label for="phrase">Enter a sentence without any punctuation:</label>
+                    <input id="phrase" type="text" name="phrase">
+                </li>
+                <li>
+                    <label for="phrase">Enter a word to search for:</label>
+                    <input id="phrase" type="text" name="phrase">
+                </li>
+                <li>
+                    <button type='submit'>Check</button>
+                </li>
+            </ul>
+        </form>
     </body>
 </html>
