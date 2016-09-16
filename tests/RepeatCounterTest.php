@@ -49,5 +49,17 @@
             //Assert
             $this->assertEquals(2, $result);
         }
+
+        function test_countRepeats_differentCases()
+        {
+            //Arrange
+            $newRepeatCounter = new RepeatCounter;
+            $inputPhrase = "Hi howdy hi";
+            $inputSearchWord = "hi";
+            //Act
+            $result = $newRepeatCounter->countRepeats($inputPhrase, $inputSearchWord);
+            //Assert
+            $this->assertEquals(2, $result);
+        }
     }
 ?>
