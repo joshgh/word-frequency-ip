@@ -37,5 +37,17 @@
             //Assert
             $this->assertEquals(1, $result);
         }
+
+        function test_countRepeats_multiMatch()
+        {
+            //Arrange
+            $newRepeatCounter = new RepeatCounter;
+            $inputPhrase = "hi howdy hi";
+            $inputSearchWord = "hi";
+            //Act
+            $result = $newRepeatCounter->countRepeats($inputPhrase, $inputSearchWord);
+            //Assert
+            $this->assertEquals(2, $result);
+        }
     }
 ?>
