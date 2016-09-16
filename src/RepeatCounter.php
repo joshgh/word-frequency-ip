@@ -5,7 +5,7 @@
             $count = 0;
             $phraseArray = explode(" ", $phrase);
             foreach ($phraseArray as $word) {
-                if ($word == $searchWord) {
+                if (strtolower($word) == strtolower($searchWord)) {
                     $count++;
                 }
             }
