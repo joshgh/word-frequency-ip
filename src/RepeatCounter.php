@@ -1,5 +1,6 @@
 <?php
-    class RepeatCounter{
+    class RepeatCounter
+    {
         function countRepeats($phrase, $searchWord)
         {
             $count = 0;

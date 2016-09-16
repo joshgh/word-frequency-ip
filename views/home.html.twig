@@ -11,11 +11,12 @@
         <div class="container">
             <h1>Word Frequency</h1>
             <div class='content'>
+                <h4>Want to find out how many times a word appears in a phrase? Now you can!</h4>
                 <form action='/result' method='post'>
                     <ul>
                         <li>
                             <label for="phrase">Enter a sentence without any punctuation:</label>
-                            <input id="phrase" type="text" name="phrase">
+                            <textarea id="phrase" name="phrase" rows="2" cols="50"></textarea>
                         </li>
                         <li>
                             <label for="word">Enter a word to search for:</label>
