@@ -12,5 +12,14 @@
         return $app['twig']->render('home.html.twig');
     });
 
+    $app->post('/result', function() use($app) {
+        $newRepeatCounter = new RepeatCounter;
+        $phraseInput = $_POST['phrase'];
+        $wordInput = $_POST['word'];
+        $result = $newRepeatCounter->countRepeats($phraseInput, $wordInput);
+
+        return $app['twig']->render('result.html.twig', array('result' => $result));
+    });
+
     return $app;
  ?>
