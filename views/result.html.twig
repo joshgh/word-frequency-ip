@@ -11,8 +11,7 @@
         <div class="container">
             <h1>Word Frequency</h1>
             <div class='content'>
-                <p><span class='output'>{{ word }}</span> appears {{ result }} times in the phrase
-                <span class='output'>{{ phrase }}</span></p>
+                <p><span class='output'>{{ word }}</span> appears {{ result }} time{% if result != 1 %}s{% endif %} in the phrase <span class='output'>{{ phrase }}</span></p>
                 <a href='/'><button class='btn btn-primary' type='button'>Home</button></a>
             </div>
         </div>
