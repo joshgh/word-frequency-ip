@@ -13,5 +13,17 @@
             //Assert
             $this->assertEquals(0, $result);
         }
+
+        function test_countRepeats_singleWordMatch()
+        {
+            //Arrange
+            $newRepeatCounter = new RepeatCounter;
+            $inputPhrase = "hi";
+            $inputSearchWord = "hi";
+            //Act
+            $result = $newRepeatCounter->countRepeats($inputPhrase, $inputSearchWord);
+            //Assert
+            $this->assertEquals(1, $result);
+        }
     }
 ?>
