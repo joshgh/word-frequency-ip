@@ -30,8 +30,8 @@
         {
             //Arrange
             $newRepeatCounter = new RepeatCounter;
-            $inputPhrase = "hi";
-            $inputSearchWord = "hi howdy";
+            $inputPhrase = "hi howdy";
+            $inputSearchWord = "hi";
             //Act
             $result = $newRepeatCounter->countRepeats($inputPhrase, $inputSearchWord);
             //Assert

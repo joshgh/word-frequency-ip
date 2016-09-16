@@ -2,11 +2,13 @@
     class RepeatCounter{
         function countRepeats($phrase, $searchWord)
         {
-            if ($phrase == $searchWord) {
-                return 1;
-            } else {
-                return 0;
-            }    
+            $phraseArray = explode(" ", $phrase);
+            foreach ($phraseArray as $word) {
+                if ($word == $searchWord) {
+                    return 1;
+                }
+            }
+            return 0;
         }
     }
 ?>
