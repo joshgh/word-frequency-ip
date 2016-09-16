@@ -2,13 +2,14 @@
     class RepeatCounter{
         function countRepeats($phrase, $searchWord)
         {
+            $count = 0;
             $phraseArray = explode(" ", $phrase);
             foreach ($phraseArray as $word) {
                 if ($word == $searchWord) {
-                    return 1;
+                    $count++;
                 }
             }
-            return 0;
+            return $count;
         }
     }
 ?>
