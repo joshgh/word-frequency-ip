@@ -4,6 +4,7 @@ html, body {
 }
 
 body {
+  font-family: 'Poppins', sans-serif;
   background: #c6bcb6; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(left top, #c6bcb6, #e9e5e2, #c6bcb6); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(bottom right, #c6bcb6, #e9e5e2, #c6bcb6); /* For Opera 11.1 to 12.0 */
@@ -30,5 +31,10 @@ form ul {
 }
 
 h1 {
+  font-family: 'Nunito', sans-serif;
   text-align: center;
+}
+
+label {
+  font-weight: normal;
 }
