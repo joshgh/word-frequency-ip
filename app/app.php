@@ -18,7 +18,7 @@
         $wordInput = $_POST['word'];
         $result = $newRepeatCounter->countRepeats($phraseInput, $wordInput);
 
-        return $app['twig']->render('result.html.twig', array('result' => $result));
+        return $app['twig']->render('result.html.twig', array('result' => $result, 'phrase' => $phraseInput, 'word' => $wordInput));
     });
 
     return $app;
