@@ -1,0 +1,28 @@
+Word Frequency Specs
+
+phrase is the list of words to be searched, searchword is the word to search for
+
+  Program should return 0 if searchword is not in phrase
+    input phrase: "howdy"
+    input searchword: "hi"
+    output: 0
+
+  Program should return 1 if phrase is one word long and it is the same as searchword
+    input phrase: "hi"
+    input searchword: "hi"
+    output: 1
+
+  Program should return 1 if phrase is multiple words long and searchword is one of them
+    input phrase: "hi howdy"
+    input searchword: "hi"
+    output: 1
+
+  Program should return 2 if phrase is multiple words long and searchword appears twice
+    input phrase: "hi howdy hi"
+    input searchword:"hi"
+    output: 2
+
+  Program should still count a match if searchword and phrase have different capitalization
+  input phrase: "Hi howdy hi"
+  input searchword:"hi"
+  output: 2
