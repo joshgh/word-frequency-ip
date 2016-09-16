@@ -25,5 +25,17 @@
             //Assert
             $this->assertEquals(1, $result);
         }
+
+        function test_countRepeats_multiWordPhrase()
+        {
+            //Arrange
+            $newRepeatCounter = new RepeatCounter;
+            $inputPhrase = "hi";
+            $inputSearchWord = "hi howdy";
+            //Act
+            $result = $newRepeatCounter->countRepeats($inputPhrase, $inputSearchWord);
+            //Assert
+            $this->assertEquals(1, $result);
+        }
     }
 ?>
