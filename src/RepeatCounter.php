@@ -1,8 +1,12 @@
 <?php
     class RepeatCounter{
-        function countRepeats()
+        function countRepeats($phrase, $searchWord)
         {
-            return 0;
+            if ($phrase == $searchWord) {
+                return 1;
+            } else {
+                return 0;
+            }    
         }
     }
 ?>
